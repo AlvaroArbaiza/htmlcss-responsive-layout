@@ -7,31 +7,39 @@ header {
 
 /* MAIN - Inizio*/
 main section {
-    margin: 40px 20px;
+    padding: 40px 20px;
 }
-
-/* SECTION 1 - Inizio*/
-main section#skills > div:first-child {
-    width: 100%;
-    padding: 30px 20px 0 20px;
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-main section#skills > div:nth-of-type(1n+2) {
+/* centratura elementi interni */
+main section > div {
     width: 100%;
     padding: 30px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    border-radius: 30px;
 }
-main section#skills div > h2,
+/* font h3 */
+main section div > h3 {
+    font-size: 1.3rem;
+}
+
+/* SECTION 1 */
+main section#skills > div:first-child {
+    width: 100%;
+    padding-bottom: 0;
+}
+main section#skills div > h3,
 main section#skills div > i {
     color: rgb(0, 132, 253);
 }
 main section#skills div > i {
     font-size: 100px;
-}
-main section#skills div > h2 {
-    font-size: 1.3rem;
 }
 main section#skills div > p {
     color: rgb(90, 110, 127);
@@ -39,8 +47,7 @@ main section#skills div > p {
     font-weight: 600;
     line-height: 1.5rem;
 }
-
-/* demo application */
+/* CARD - demo application */
 main section#skills div > a {
     padding: 10px 40px;
     background-color: rgb(0, 132, 253);
@@ -53,7 +60,28 @@ main section#skills div > a {
 main section#skills div > img {
     padding-bottom: 0;
 }
-/* clean code */
+
+/* SECTION 2 */
+main section#planning > div:first-child {
+    padding: 0;
+    text-align: left;
+    color: white;
+    font-size: 0.8rem;
+}
+main section#planning div > p {
+    line-height: 1.5rem;
+}
+main section#planning div p > i {
+    color: rgb(78, 78, 78);
+}
+/* icona - arrown down */
+main section#planning div#arrow-down {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 
 
 /* FOOTER */
