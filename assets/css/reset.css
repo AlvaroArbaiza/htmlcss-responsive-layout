@@ -42,7 +42,7 @@
     gap: 40px;
 }
 
-/* Lista */
+/* List */
 li {
     list-style: none;
     display: inline-block;
@@ -68,6 +68,9 @@ img {
 }
 
 /* Font */
+.txt-left {
+    text-align: left;
+}
 .font-13 {
     font-size: 13px;
 }
@@ -95,4 +98,22 @@ img {
 }
 .w-30 {
     width: 30%;
+}
+
+/* Colors */
+.c-violet {
+    color: rgb(151, 146, 228);
+}
+.c-white {
+    color: white;
+}
+
+/* Button */
+.button {
+    padding: 10px 45px;
+    border-radius: 20px;
+    word-spacing: 5px;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    font-size: 0.9em;
 }

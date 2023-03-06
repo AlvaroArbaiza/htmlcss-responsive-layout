@@ -1,11 +1,11 @@
-/* HEADER */
+/* ------ HEADER ------*/
 header {
     width: 100vw;
     background-color: rgb(0, 132, 253);
     padding: 10px 20px;
 }
 
-/* MAIN - Inizio*/
+/* ------ MAIN ------*/
 main section {
     padding: 40px 20px;
 }
@@ -14,6 +14,7 @@ main section {
     flex-direction: column;
     gap: 20px;
 }
+
 /* centratura elementi interni */
 main section > div {
     width: 100%;
@@ -24,6 +25,7 @@ main section > div {
     gap: 30px;
     border-radius: 30px;
 }
+
 /* font */
 main section div > h3 {
     font-size: 1.3em;
@@ -35,10 +37,11 @@ main section div p {
     line-height: 1.5em;
 }
 
-/* SECTION 1 */
+/*--- SECTION 1 ---*/
 main section#skills > div:first-child {
     width: 100%;
     padding-bottom: 0;
+    text-align: left;
 }
 main section#skills div > h3,
 main section#skills div > i {
@@ -52,21 +55,15 @@ main section#skills div > p {
     font-size: 0.8em;
     font-weight: 600;
 }
-/* CARD - demo application */
+/* Demo application - button */
 main section#skills div > a {
-    padding: 10px 40px;
     background-color: rgb(0, 132, 253);
-    border-radius: 20px;
-    word-spacing: 5px;
-    letter-spacing: 0.15em;
-    font-weight: 600;
-    font-size: 0.9em;
 }
 main section#skills div > img {
     padding-bottom: 0;
 }
 
-/* SECTION 2 */
+/*--- SECTION 2 ---*/
 main section#planning > div:first-child {
     padding: 0;
     text-align: left;
@@ -76,6 +73,7 @@ main section#planning > div:first-child {
 main section#planning div p > i {
     color: rgb(78, 78, 78);
 }
+
 /* icona - arrown down */
 main section#planning div#arrow-down {
     margin: 0 auto;
@@ -84,7 +82,7 @@ main section#planning div#arrow-down {
     border-radius: 50%;
 }
 
-/* SECTION 3 */
+/*--- SECTION 3 ---*/
 main section#testimonials div > h2 {
     color: rgb(151, 146, 228);
 }
@@ -102,8 +100,22 @@ main section#testimonials div.testimonial > img {
     object-fit: cover;
 }
 
+/*--- SECTION 4 ---*/
+main section#benefits div:first-child {
+    padding: 30px 0;
+    color: white;
+}
+main section#benefits div span:first-child {
+    font-size: 50px;
+    font-weight: 600;
+}
+main section#benefits div span:nth-child(2) {
+    font-size: 1.3em;
+    font-weight: 600;
+}
 
-/* FOOTER */
+
+/*------ FOOTER ------*/
 footer {
     width: 100%;
     padding: 30px 0;
@@ -114,7 +126,13 @@ footer > div {
     height: 100px;
 }
 
-/* Backgrounds */
+/*--- Backgrounds ---*/
+.bg-violet {
+    background-color: rgb(151, 146, 228);
+}
+.bg-black {
+    background-color: rgb(51, 51, 51);
+}
 
 /* debug */
 .bg-lightblue {
@@ -126,16 +144,4 @@ footer > div {
 .bg-white {
     background-color: whitesmoke;
 }
-/* debug */
 
-.bg-violet {
-    background-color: rgb(151, 146, 228);
-}
-.bg-black {
-    background-color: rgb(51, 51, 51);
-}
-
-/* Colors */
-.c-white {
-    color: white;
-}
