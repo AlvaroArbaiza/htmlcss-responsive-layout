@@ -37,7 +37,7 @@ main section div p {
     line-height: 1.5em;
 }
 
-/*--- SECTION 1 ---*/
+/*--- SECTION 1 - Skills ---*/
 main section#skills > div:first-child {
     width: 100%;
     padding-bottom: 0;
@@ -63,7 +63,7 @@ main section#skills div > img {
     padding-bottom: 0;
 }
 
-/*--- SECTION 2 ---*/
+/*--- SECTION 2 - Planning ---*/
 main section#planning > div:first-child {
     padding: 0;
     text-align: left;
@@ -82,7 +82,7 @@ main section#planning div#arrow-down {
     border-radius: 50%;
 }
 
-/*--- SECTION 3 ---*/
+/*--- SECTION 3 - Testimonials ---*/
 main section#testimonials div > h2 {
     color: rgb(151, 146, 228);
 }
@@ -100,18 +100,59 @@ main section#testimonials div.testimonial > img {
     object-fit: cover;
 }
 
-/*--- SECTION 4 ---*/
+/*--- SECTION 4 - Benefits ---*/
 main section#benefits div:first-child {
     padding: 30px 0;
     color: white;
 }
 main section#benefits div span:first-child {
-    font-size: 50px;
+    font-size: 3em;
     font-weight: 600;
 }
 main section#benefits div span:nth-child(2) {
     font-size: 1.3em;
     font-weight: 600;
+}
+
+/*--- SECTION 5 - About Us---*/
+main section#about-us > div {
+    padding: 30px 0;
+    text-align: left;
+}
+
+/* text */
+main section#about-us div > span {
+    font-size: 3em;
+    font-weight: 600;
+}
+main section#about-us div > p {
+    line-height: 2em;
+}
+
+/* card */
+main section#about-us div > img {
+    width: 70%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+main section#about-us div#card-ab-us > p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight: 800;
+}
+main section#about-us #card-ab-us div > i.fa-quote-left {
+    top: 0;
+    right: 70px;
+    font-size: 70px;
+}
+main section#about-us #card-ab-us div > a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+} 
+main section#about-us #card-ab-us div a > i {
+    margin-right: 7px;
 }
 
 
