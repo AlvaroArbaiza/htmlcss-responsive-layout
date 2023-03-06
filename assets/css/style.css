@@ -1,8 +1,8 @@
 /* header */
 header {
-    height: 50px;
     width: 100vw;
     background-color: rgb(0, 132, 253);
+    padding: 10px 20px;
 }
 
 /* main */
@@ -25,6 +25,7 @@ footer > div {
     height: 100px;
 }
 
+/* Backgrounds */
 .bg-lightgrey {
     background-color: lightgray;
 }
@@ -39,4 +40,9 @@ footer > div {
 }
 .bg-black {
     background-color: rgb(51, 51, 51);
+}
+
+/* Colors */
+.c-white {
+    color: white;
 }

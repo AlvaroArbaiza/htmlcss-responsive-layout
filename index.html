@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Responsive Layout</title>
 </head>
 <body>
     <!-- header -->
-    <header></header>
+    <header class="flex justify-c-space-between">
+        <!-- logo -->
+        <div>
+            <img src="./assets/img/logo.png" alt="logo">
+        </div>
+        <!-- menù -->
+        <div class="flex align-i-center">
+            <i class="fa-solid fa-bars c-white font-24"></i>
+            <ul class="display-none">
+                <li>
+                    <a href="#">Planning</a>
+                </li>
+                <li>
+                    <a href="#">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#">Features</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">Get Started</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <!-- main -->
     <main>
