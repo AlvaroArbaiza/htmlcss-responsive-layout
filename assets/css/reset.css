@@ -1,0 +1,94 @@
+/* REGOLE GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-d-column {
+    flex-direction: column;
+}
+.align-i-center {
+    align-items: center;
+}
+.justify-c-center {
+    justify-content: center;
+}
+.al-jus-center {
+    justify-content: center;
+    align-items: center;
+}
+.justify-c-space-between {
+    justify-content: space-between;
+}
+.gap-10 {
+    gap: 10px;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-30 {
+    gap: 30px;
+}
+.gap-40 {
+    gap: 40px;
+}
+
+/* Lista */
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* Position */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+}
+
+/* Immagini */
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* Font */
+.font-13 {
+    font-size: 13px;
+}
+.font-37 {
+    font-size: 37px;
+}
+
+/* Display */
+.inline-block {
+    display: inline-block;
+}
+.display-none {
+    display: none;
+}
+
+/* Width */
+.w-90 {
+    width: 90%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-30 {
+    width: 30%;
+}
