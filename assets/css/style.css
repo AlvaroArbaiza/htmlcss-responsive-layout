@@ -24,9 +24,15 @@ main section > div {
     gap: 30px;
     border-radius: 30px;
 }
-/* font h3 */
+/* font */
 main section div > h3 {
-    font-size: 1.3rem;
+    font-size: 1.3em;
+}
+main section div h2 {
+    font-size: 1.8em;
+}
+main section div p {
+    line-height: 1.5em;
 }
 
 /* SECTION 1 */
@@ -43,9 +49,8 @@ main section#skills div > i {
 }
 main section#skills div > p {
     color: rgb(90, 110, 127);
-    font-size: 0.8rem;
+    font-size: 0.8em;
     font-weight: 600;
-    line-height: 1.5rem;
 }
 /* CARD - demo application */
 main section#skills div > a {
@@ -53,9 +58,9 @@ main section#skills div > a {
     background-color: rgb(0, 132, 253);
     border-radius: 20px;
     word-spacing: 5px;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.15em;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 main section#skills div > img {
     padding-bottom: 0;
@@ -66,10 +71,7 @@ main section#planning > div:first-child {
     padding: 0;
     text-align: left;
     color: white;
-    font-size: 0.8rem;
-}
-main section#planning div > p {
-    line-height: 1.5rem;
+    font-size: 0.8em;
 }
 main section#planning div p > i {
     color: rgb(78, 78, 78);
@@ -82,6 +84,23 @@ main section#planning div#arrow-down {
     border-radius: 50%;
 }
 
+/* SECTION 3 */
+main section#testimonials div > h2 {
+    color: rgb(151, 146, 228);
+}
+main section#testimonials div:nth-of-type(1n+2) {
+    color: rgb(249, 249, 254);
+}
+main section#testimonials div p > i {
+    font-size: 24px;
+}
+main section#testimonials div.testimonial > img {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
 
 
 /* FOOTER */
@@ -96,17 +115,21 @@ footer > div {
 }
 
 /* Backgrounds */
-.bg-lightgrey {
-    background-color: lightgray;
-}
-.bg-violet {
-    background-color: rgb(151, 146, 228);
-}
+
+/* debug */
 .bg-lightblue {
     background-color: rgb(181, 221, 255);
 }
+.bg-lightgrey {
+    background-color: lightgray;
+}
 .bg-white {
     background-color: whitesmoke;
+}
+/* debug */
+
+.bg-violet {
+    background-color: rgb(151, 146, 228);
 }
 .bg-black {
     background-color: rgb(51, 51, 51);
