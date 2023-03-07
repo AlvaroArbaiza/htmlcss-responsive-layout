@@ -45,10 +45,10 @@ main section#skills > div:first-child {
     text-align: left;
 }
 main section#skills div > h3,
-main section#skills div > i {
+main section#skills div > i.big-icon {
     color: rgb(0, 132, 253);
 }
-main section#skills div > i {
+main section#skills div > i.big-icon {
     font-size: 100px;
 }
 main section#skills div > p {
@@ -192,11 +192,8 @@ footer {
 }
 footer > div {
     margin:0 auto;
-    width: calc(100% - 40px);
+    width: 80%;
     text-align: center;
-}
-footer > div:last-child {
-    width: calc(100% - 50px);
 }
 footer div > p {
     line-height: 1.4em;
@@ -206,7 +203,7 @@ footer div > a {
 }
 
 /* ----- RESPONSIVE TABLET ----- */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
     
     /* MAIN */
     main section {
@@ -264,16 +261,98 @@ footer div > a {
     }
     main section#get-started div > p {
         line-height: 2em;
-        padding: 0 150px;
+        padding: 0 25%;
     }
 
     /* FOOTER */
     footer > div {
-        width: 45%;
+        width: 40%;
     }
 }
 
 /* ----- RESPONSIVE DESKTOP ----- */
 @media only screen and (min-width: 1024px) {
 
+    /* HEADER */
+    header {
+        padding: 10px 15%;
+    }
+    header div > a#menu-icon {
+        display: none;
+    }
+    header div > ul#menu-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    header div ul#menu-list li div > a {
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+    }
+
+    /* MAIN */
+    main section {
+        padding: 30px 15%;
+    }
+
+    /* Section 1 - Skills */
+    main section#skills > div:first-child {
+        flex-direction: row;
+        gap: 0;
+    }
+    main section#skills div#txt-skills {
+        width: 50%;
+    }
+    main section#skills div#img-skills {
+        width: 50%;
+        align-self: end;
+    }
+    main section#skills div#img-skills > img {
+        max-width: 100%;
+    }
+
+    /* Section 2 - Planning */
+    main section#planning {
+        padding: 50px 24%;
+    }
+
+    /* strategy planning */
+    main section#planning div#strategy{
+        width: 45%;
+    }
+    main section#planning div#strategy > h2 {
+        font-size: 2em;
+    }
+    main section#planning div#strategy > img {
+        margin: 30px 0 50px 0;
+    }
+
+    /* app development */
+    main section#planning > div#development {
+        gap: 10px;
+        width: 45%;
+        align-self: flex-end;
+    }
+    main section#planning div#development > img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    main section#planning div#development > h3 {
+        font-size: 1em;
+    }
+    main section#planning div#development p > i {
+        font-size: 0.7em;
+    }
+
+    /* Section 4 - Benefits */
+    main section#benefits div:nth-of-type(1n+2) {
+        width: calc((100% / 3) - 20px);
+    }
+
+    /* FOOTER */
+    footer div {
+        width: 30%;
+    }
 }
