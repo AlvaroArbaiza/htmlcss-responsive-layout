@@ -94,6 +94,10 @@ main section#testimonials div.testimonial > img {
     aspect-ratio: 1;
     object-fit: cover;
 }
+main section#testimonials div > strong {
+    margin-top: 30px;
+    display: block;
+}
 
 /*--- SECTION 4 - Benefits ---*/
 main section#benefits div:first-child {
@@ -112,7 +116,6 @@ main section#benefits div span:nth-child(2) {
 /*--- SECTION 5 - About Us---*/
 main section#about-us > div {
     padding: 30px 0;
-    text-align: left;
 }
 
 /* text */
@@ -201,12 +204,19 @@ footer div > a {
 
 /* ----- RESPONSIVE TABLET ----- */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    main section#skills {
+    
+    /* main */
+    main section {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px 0;
+        gap: 30px 0;
     }
+    main section div h2 {
+        font-size: 2.2em;
+    }
+
+    /* skills */
     main section#skills > div {
         width: calc((100% / 3) - 20px);
     }
@@ -215,6 +225,22 @@ footer div > a {
     }
     main section#skills div > img {
         max-width: 50%;
+    }
+    
+    /* planning */
+    main section#planning div > h2 {
+        font-size: 5em;
+    }
+
+    /* testimonials */
+    main section#testimonials > div:nth-of-type(1n+2) {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /* benefits */
+    main section#benefits div:nth-of-type(1n+2) {
+        width: calc((100% / 2) - 15px);
     }
 }
 
