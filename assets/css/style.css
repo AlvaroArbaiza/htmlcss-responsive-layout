@@ -8,8 +8,6 @@ header {
 /* ------ MAIN ------*/
 main section {
     padding: 40px 20px;
-}
-main section {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -58,9 +56,6 @@ main section#skills div > p {
 /* Demo application - button */
 main section#skills div > a {
     background-color: rgb(0, 132, 253);
-}
-main section#skills div > img {
-    padding-bottom: 0;
 }
 
 /*--- SECTION 2 - Planning ---*/
@@ -180,11 +175,6 @@ main section#get-started div.c-white div#button-started > a {
 main section#get-started div#info-azienda {
     font-size: 0.75em;
 }
-main section#get-started div#info-azienda > i {
-    font-size: 4px;
-    vertical-align: middle;
-    margin: 0 2px;
-}
 main section#get-started div#info-azienda > a {
     text-decoration: underline;
 }
@@ -209,4 +199,26 @@ footer div > a {
     text-decoration: underline;
 }
 
+/* ----- RESPONSIVE TABLET ----- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    main section#skills {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px 0;
+    }
+    main section#skills > div {
+        width: calc((100% / 3) - 20px);
+    }
+    main section#skills > div:first-child {
+        width: calc(((100% / 3) - 5px) * 2 );
+    }
+    main section#skills div > img {
+        max-width: 50%;
+    }
+}
 
+/* ----- RESPONSIVE DESKTOP ----- */
+@media only screen and (min-width: 1024px) {
+
+}

@@ -135,7 +135,7 @@ img {
 .button {
     padding: 10px 45px;
     border-radius: 20px;
-    word-spacing: 5px;
+    word-spacing: 0.4em;
     letter-spacing: 0.15em;
     font-weight: 600;
     font-size: 0.9em;
