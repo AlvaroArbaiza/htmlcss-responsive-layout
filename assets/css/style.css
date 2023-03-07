@@ -3,6 +3,9 @@ header {
     width: 100vw;
     background-color: rgb(0, 132, 253);
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 /* ------ MAIN ------*/
@@ -205,8 +208,9 @@ footer div > a {
 /* ----- RESPONSIVE TABLET ----- */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     
-    /* main */
+    /* MAIN */
     main section {
+        padding: 40px 30px;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
@@ -241,6 +245,31 @@ footer div > a {
     /* benefits */
     main section#benefits div:nth-of-type(1n+2) {
         width: calc((100% / 2) - 15px);
+    }
+
+    /* about us */
+    main section#about-us div#txt-ab-us {
+        width: 55%;
+    }
+    main section#about-us div#card-ab-us {
+        width: 35%;
+    }
+
+    /* get started */
+    main section#get-started div > .font-2_5em-tablet{
+        font-size: 2.5em;
+    }
+    main section#get-started div > .font-5em-tablet {
+        font-size: 5em;
+    }
+    main section#get-started div > p {
+        line-height: 2em;
+        padding: 0 150px;
+    }
+
+    /* FOOTER */
+    footer > div {
+        width: 45%;
     }
 }
 
